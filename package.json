@@ -1,17 +1,20 @@
 {
-	"name": "debug",
-	"version": "1.0.0",
-	"repository": "git@github.com:av0kato/debug.git",
+	"name": "@av0kato/debug",
+	"version": "1.0.1",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/av0kato/debug.git"
+	},
 	"main": "index.js",
 	"scripts": {
 		"start": "env NODE_ENV=development nodemon index.js",
 		"lint": "eslint src/ --fix"
 	},
 	"dependencies": {
-		"debug": "^4.1.1",
-		"dotenv": "^8.2.0"
+		"debug": "^4.1.1"
 	},
 	"devDependencies": {
+		"dotenv": "^8.2.0",
 		"nodemon": "^2.0.2",
 		"eslint": "^6.8.0",
 		"eslint-config-arista-base": "1.1.0",
@@ -21,5 +24,8 @@
 	},
 	"keywords": [],
 	"author": "Johnny Rocket <0.snilcy@gmail.com>",
-	"license": "MIT"
+	"license": "MIT",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
 }
