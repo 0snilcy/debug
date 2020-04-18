@@ -1,7 +1,3 @@
-require('dotenv').config({
-	path: require('path').resolve(__dirname, '../.env'),
-})
-
 const debug = require('debug')
 const { USER_NAME = 'Meow' } = process.env
 

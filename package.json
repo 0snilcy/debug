@@ -1,7 +1,10 @@
 {
-	"name": "debug",
+	"name": "@av0kato/debug",
 	"version": "1.0.0",
-	"repository": "git@github.com:av0kato/debug.git",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/av0kato/debug.git"
+	},
 	"main": "index.js",
 	"scripts": {
 		"start": "env NODE_ENV=development nodemon index.js",
@@ -21,5 +24,8 @@
 	},
 	"keywords": [],
 	"author": "Johnny Rocket <0.snilcy@gmail.com>",
-	"license": "MIT"
+	"license": "MIT",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
 }
