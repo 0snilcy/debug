@@ -1,25 +1,28 @@
 {
 	"name": "@av0kato/debug",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/av0kato/debug.git"
 	},
 	"main": "index.js",
 	"scripts": {
-		"start": "env NODE_ENV=development nodemon index.js",
+		"start": "env NODE_ENV=development nodemon index.ts",
+		"build": "tsc --declaration ./index.ts",
 		"lint": "eslint src/ --fix"
 	},
 	"dependencies": {
-		"debug": "^4.1.1"
+		"debug": "^4.1.1",
+		"typescript": "^3.8.3"
 	},
 	"devDependencies": {
-		"dotenv": "^8.2.0",
-		"nodemon": "^2.0.2",
+		"@types/node": "^13.13.2",
+		"@types/debug": "^4.1.5",
 		"eslint": "^6.8.0",
 		"eslint-config-arista-base": "1.1.0",
 		"eslint-plugin-prettier": "^3.1.2",
 		"jest": "^24.9.0",
+		"nodemon": "^2.0.2",
 		"prettier": "^1.19.1"
 	},
 	"keywords": [],
