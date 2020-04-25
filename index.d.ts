@@ -1,5 +1,5 @@
 /// <reference types="debug" />
-declare const _default: (serviceName: string) => {
+declare const _default: {
     log: import("debug").Debugger;
     info: import("debug").Debugger;
     warn: import("debug").Debugger;

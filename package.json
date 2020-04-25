@@ -1,11 +1,10 @@
 {
 	"name": "@av0kato/debug",
-	"version": "1.0.2",
+	"version": "2.0.0",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/av0kato/debug.git"
 	},
-	
 	"main": "index.js",
 	"scripts": {
 		"start": "env NODE_ENV=development nodemon index.ts",
